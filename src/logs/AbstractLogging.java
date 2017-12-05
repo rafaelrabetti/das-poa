@@ -19,8 +19,6 @@ public abstract class AbstractLogging {
 	
 	@Before(" call(void java.io.PrintStream.println(String)) ")
 	public void beforePrintlnCall(){
-		for(int i = 0; i < num; i++){
-			System.out.print(" " + num);
-		}
+		System.out.print(" " + num);
 	}
 }
