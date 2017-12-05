@@ -1,7 +1,7 @@
 package driver;
 
-public class DoY implements DoThis{
-	public void doThis() {
-		System.out.println("Executando: " + this.getClass().getSimpleName());
+public class DoY implements Logger{
+	public void info() {
+		System.out.println("[INFO] Executando: " + this.getClass().getSimpleName());
 	}
 }

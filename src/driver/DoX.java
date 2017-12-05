@@ -1,8 +1,8 @@
 package driver;
 
-public class DoX implements DoThis{
-	public void doThis() {
-		System.out.println("Executando: " + this.getClass().getSimpleName());
+public class DoX implements Logger{
+	public void info() {
+		System.out.println("[INFO] Executando: " + this.getClass().getSimpleName());
 	}
 	
 }
